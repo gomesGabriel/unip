@@ -100,7 +100,7 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 		this.jPanelBlack.setLayout(null);
 		/// ----------- Cad User   -----------
 		this.lblNome = new JLabel();
-		this.lblNome.setText("Usuário:");
+		this.lblNome.setText("Usuï¿½rio:");
 		this.lblNome.setBounds(80, 30, 50, 10);
 		this.jPanelBlack.add(this.lblNome);
 		
@@ -204,7 +204,7 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 		this.group.add(this.rdbSerial);
 		
 		this.lblInSerial = new JLabel();
-		this.lblInSerial.setText("Número de Série: ");
+		this.lblInSerial.setText("Nï¿½mero de Sï¿½rie: ");
 		this.lblInSerial.setForeground(Color.white);
 		this.lblInSerial.setBounds(30, 60, 130, 30);
 		
@@ -274,13 +274,13 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 		this.jTabbedAbas.addTab("Cadastro de Guitarra", this.painelCadastrarGuitarra);
 		
 		this.lblSerial = new JLabel();
-		this.lblSerial.setText("Número de Série: ");
+		this.lblSerial.setText("Nï¿½mero de Sï¿½rie: ");
 		this.lblSerial.setForeground(Color.white);
 		this.lblSerial.setBounds(30, 30, 130, 30);
 		this.painelCadastrarGuitarra.add(lblSerial);
 		
 		this.lblPrice = new JLabel();
-		this.lblPrice.setText("Preço: ");
+		this.lblPrice.setText("Preï¿½o: ");
 		this.lblPrice.setForeground(Color.white);
 		this.lblPrice.setBounds(30, 70, 70, 30);
 		this.painelCadastrarGuitarra.add(lblPrice);
@@ -408,7 +408,7 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 			
 			for (int i=0; i <= (dadosValidaCadastro.size()-1); i++) {
 				if(usuario.equals(this.dadosValidaCadastro.get(i))) {
-					JOptionPane.showMessageDialog(null, "Nome de usuário já utilizado!");
+					JOptionPane.showMessageDialog(null, "Nome de usuï¿½rio jï¿½ utilizado!");
 					this.txtNome.setText("");
 					this.txtSenha.setText("");
 					temp += 1;
@@ -449,7 +449,7 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 			}	
 		}
 		if(temp == 0) {
-			JOptionPane.showMessageDialog(null, "Este número de série não está cadastrado!");
+			JOptionPane.showMessageDialog(null, "Este nï¿½mero de sï¿½rie nï¿½o estï¿½ cadastrado!");
 		}
 		this.txtInSerial.setText("");
 	}
@@ -487,7 +487,7 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 		int temp = 0;
 		
 		if(!serial.matches("[0-9]*") || !price.matches("[0-9]*") ) {
-			JOptionPane.showMessageDialog(null, "Digite apenas números no campo Número de Serie e Preço!");
+			JOptionPane.showMessageDialog(null, "Digite apenas nÃºmeros no campo NÃºmero de Serie e PreÃ§o!");
 			this.txtSerial.setText("");
 			this.txtPrice.setText("");
 			serial = this.txtSerial.getText();
@@ -495,7 +495,7 @@ public class JanelaPrincipal extends JFrame implements ChangeListener, ActionLis
 		else {
 			for (int i=0; i <= (dadosValidaGuitarra.size()-1); i++) {
 				if(("#"+serial).equals(this.dadosValidaGuitarra.get(i))) {
-					JOptionPane.showMessageDialog(null, "Esse número de série ja foi utilizado!");
+					JOptionPane.showMessageDialog(null, "Esse nÃºmero de sÃ©rie ja foi utilizado!");
 					this.txtSerial.setText("");
 					this.txtPrice.setText("");
 					this.txtBuilder.setText("");
