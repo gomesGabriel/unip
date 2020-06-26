@@ -28,11 +28,11 @@ public class Main {
 	  		if(continua.equals("S") || continua.equals("s")) {
 ////////////////faz a escolha do arquivo, modo novo
 	  			int valorRetorno = 0;
-	  			JFileChooser jFileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
+	  			JFileChooser jFileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory()); //usa o jfilechooser pra escolher o caminho do arquivo, antes eu tinha que digitar no console
 	  			valorRetorno = jFileChooser.showOpenDialog(null);
 	  			if(valorRetorno == JFileChooser.APPROVE_OPTION) {
 	  				File file = jFileChooser.getSelectedFile();
-///////////////até aqui, momdo novo
+///////////////atÃ© aqui, momdo novo
 	  				path = file.getAbsolutePath(); //pega o caminho do arquivo selecionado
 		  			//System.out.println("Qual o arquivo deseja gravar?"); // modo antigo
 		  			//path = scanner.nextLine();                           // modo antigo
@@ -71,7 +71,7 @@ public class Main {
 		  				scanner.close();
 	  			}
 	  		}else {
-	  			System.out.println("Ok, nada será gravado!");
+	  			System.out.println("Ok, nada serï¿½ gravado!");
 	  		}
 	    	  System.exit(0);
 	      }
