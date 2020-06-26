@@ -17,7 +17,7 @@ public class LerArquivoGuitarras {
 		String path = "";
 		Scanner ler = new Scanner(System.in);
 		System.out.println("Qual o nome do arquivo?\n");
-		path = ler.nextLine();
+		path = ler.nextLine();//ler via console
 		ler.close();
 		try {
 			FileReader arq = new FileReader(path);

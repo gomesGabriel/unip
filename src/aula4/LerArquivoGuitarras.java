@@ -14,7 +14,7 @@ public class LerArquivoGuitarras {
 		int valorRetorno = 0;
 		
 		JFileChooser jFileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
-		valorRetorno = jFileChooser.showOpenDialog(null);
+		valorRetorno = jFileChooser.showOpenDialog(null);//usa o um 'escolhedor' de arquivos ao invÃ©s do console
 		
 		if(valorRetorno == JFileChooser.APPROVE_OPTION) {
 			File file = jFileChooser.getSelectedFile();
@@ -32,7 +32,7 @@ public class LerArquivoGuitarras {
 				fileReader.close();
 				
 			}catch (Exception e) {
-				JOptionPane.showMessageDialog(null, "Não foi possivel abrir o arquivo.");
+				JOptionPane.showMessageDialog(null, "Nï¿½o foi possivel abrir o arquivo.");
 				System.err.println(e.getMessage());
 			}
 		}
