@@ -18,7 +18,7 @@ public class CadastrarGuitarra {
 	
 	public void gravarArquivos() {
 		
-		path = "C:\\Users\\SANKHYA\\eclipse-workspace\\guitarra.txt";
+		path = "C:\\Users\\SANKHYA\\eclipse-workspace\\guitarra.txt";//use o caminho do seu txt
 		int qtdLinhas = 0;
 		qtdLinhas = this.dadosGuitarra.size();
 		

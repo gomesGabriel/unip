@@ -24,8 +24,8 @@ public class JogoDaVelha extends JFrame{
 	public static final int jogador_2 = 2;
 	public int vez = jogador_1;
 	
-	public ImageIcon iconBolinha = new ImageIcon(getClass().getResource("bolinha.png"));
-	public ImageIcon iconXizinho = new ImageIcon(getClass().getResource("xizinho.png"));
+	public ImageIcon iconBolinha = new ImageIcon(getClass().getResource("bolinha.png")); //pega as imagens elas devem estar na mesma pasta que o .java
+	public ImageIcon iconXizinho = new ImageIcon(getClass().getResource("xizinho.png"));//pega as imagens elas devem estar na mesma pasta que o .java
 	
 	public Boolean vitoria = false;
 	
@@ -62,7 +62,7 @@ public class JogoDaVelha extends JFrame{
 		this.setVisible(true);
 	}
 	
-	public boolean checkWinner(int jogador) {
+	public boolean checkWinner(int jogador) { //checa o vencedor
 		if(this.botoes.get(0).jogador == jogador && this.botoes.get(1).jogador == jogador && this.botoes.get(2).jogador == jogador) {
 			return true;
 		}else if(this.botoes.get(3).jogador == jogador && this.botoes.get(4).jogador == jogador && this.botoes.get(5).jogador == jogador){
@@ -109,7 +109,7 @@ public class JogoDaVelha extends JFrame{
 					jLabel.setText("Jogador: "+Integer.toString(vez));
 					this.click = true;
 					if (vitoria) {
-						JOptionPane.showMessageDialog(null,"Vitória do jogador "+Integer.toString(jogador));
+						JOptionPane.showMessageDialog(null,"Vitï¿½ria do jogador "+Integer.toString(jogador));
 						for(int i = 0; i < 9; i++) {
 							botoes.get(i).setIcon(null);
 							botoes.get(i).id = 0;
@@ -127,7 +127,7 @@ public class JogoDaVelha extends JFrame{
 					jLabel.setText("Jogador: "+Integer.toString(vez));
 					this.click = true;
 					if (vitoria) {
-						JOptionPane.showMessageDialog(null,"Vitória do jogador "+ Integer.toString(jogador));
+						JOptionPane.showMessageDialog(null,"Vitï¿½ria do jogador "+ Integer.toString(jogador));
 						for(int i = 0; i < 9; i++) {
 							botoes.get(i).setIcon(null);
 							botoes.get(i).id = 0;

@@ -19,7 +19,7 @@ public class CriarLogin {
 	
 	public void gravarArquivos() {
 		
-		path = "C:\\Users\\SANKHYA\\eclipse-workspace\\login.txt";
+		path = "C:\\Users\\SANKHYA\\eclipse-workspace\\login.txt";//use o caminho do seu txt
 		int qtdLinhas = 0;
 		qtdLinhas = this.dadosCadastro.size();
 		
