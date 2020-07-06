@@ -35,7 +35,7 @@ public class JanelaLogin extends JFrame implements ActionListener{
 		this.setLayout(null);
 		
 		this.lblUser = new JLabel();
-		this.lblUser.setText("Usuário:");
+		this.lblUser.setText("UsuÃ¡rio:");
 		this.lblUser.setBounds(40, 30, 50, 10);
 		this.add(this.lblUser);
 		
@@ -101,7 +101,7 @@ public class JanelaLogin extends JFrame implements ActionListener{
 						this.dispose();
 						teste = teste + 1;
 					}else {
-						JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!");					
+						JOptionPane.showMessageDialog(null, "UsuÃ¡rio ou senha incorretos!");					
 						this.txtUser.setText("");
 						this.txtPass.setText("");
 					}
@@ -109,20 +109,16 @@ public class JanelaLogin extends JFrame implements ActionListener{
 				}
 			}	
 			if(teste != 1 ) {
-				JOptionPane.showMessageDialog(null, "Usuário não cadastrado");
+				JOptionPane.showMessageDialog(null, "UsuÃ¡rio nÃ£o cadastrado");
 				this.txtUser.setText("");
 				this.txtPass.setText("");
-			}
-	
-		
-		//JOptionPane.showMessageDialog(null, "Apertei botão salvar");		
-	}
-	
+			}	
+		//JOptionPane.showMessageDialog(null, "Apertei botï¿½o salvar");		
+	}	
 	private void clickBtnCancel() {
 		System.exit(0);
-		//JOptionPane.showMessageDialog(null, "Apertei botão cancelar");
-	}
-	
+		//JOptionPane.showMessageDialog(null, "Apertei botï¿½o cancelar");
+	}	
 //	public void setListUsers(ArrayList<String> listUsers) {
 //		this.listUsers = listUsers;
 //	}
@@ -130,5 +126,4 @@ public class JanelaLogin extends JFrame implements ActionListener{
 //	public void setListPass(ArrayList<String> listPass) {
 //		this.listPass = listPass;
 //	}
-
 }

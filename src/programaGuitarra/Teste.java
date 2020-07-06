@@ -31,7 +31,7 @@ public class Teste extends JFrame{
 		
 		this.jButton = new JButton();
 		this.jButton.setText("OK");
-		this.jButton.setToolTipText("Dica bot„o");
+		this.jButton.setToolTipText("Dica bot√£o");
 		this.add(this.jButton);
 		
 		this.jTextField = new JTextField(30);

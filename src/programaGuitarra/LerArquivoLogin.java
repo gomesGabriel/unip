@@ -15,7 +15,7 @@ public class LerArquivoLogin {
 	
 	public void lerLogin() {
 		String linha = "";
-		String path = "C:\\Users\\SANKHYA\\eclipse-workspace\\login.txt";
+		String path = "C:\\Users\\SANKHYA\\eclipse-workspace\\login.txt";//usar o caminho do seu arquivo
 		
 		try {
 			FileReader fileReader = new FileReader(path);
